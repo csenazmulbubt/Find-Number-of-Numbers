@@ -1,0 +1,15 @@
+int num(int a[], int n, int k)
+{
+    int count=0;
+     for (int i=0;i<n;i++){
+         int x=0;
+         x=a[i];
+         int z=0;
+         while(x!=0){
+            if((z=x%10)==k)count++;
+             x=x/10;
+         }
+     }
+     return count;
+     
+}
